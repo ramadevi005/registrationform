@@ -1,0 +1,90 @@
+1)Variable Name Typo:
+
+CORRECTED CODE:
+number_of_apples=5
+print(number_Of_apple)
+
+
+ERROR:
+name error
+print(number_Of_apple)
+
+
+CORRECTED CODE:
+number_of_apples=5
+print(number_Of_apple)
+
+
+ERROR EXPLANATION:
+name error
+in first line declare that as number_of_apples after that should be printed as the number_of_apple is it should be considered as name error
+
+
+
+
+
+
+2)Accessing List Elements Out of Range:
+
+CORRECTED CODE:
+fruits=["apple","banana","cherry"]
+print(fruits[3])
+
+ERROR:
+index error
+print(fruits[3])
+
+CORRECTED CODE:
+fruits=["apple","banana","cherry"]
+print(fruits[2])
+
+ERROR EXPLANATION:
+index error 
+from the above code forward index starts from 0 so there are 2 indexes in that code we are trying to access the 3rd index element so we get the error called index error
+
+
+
+
+
+3)Function Not Behaving as Expected:
+
+CORRECTED CODE:
+def find_average(numbers):
+sum=0
+for number in numbers:
+sum+=number
+avg=sum/len(numbers)
+return average
+
+numbers=[1,2,3,4,5,6]
+average=(find_numbers)
+print("the average is {average}")
+
+ERROR:
+type error
+numbers=[1,2,3,4,5,"6"]
+
+CORRECTED CODE:
+numbers=[1,2,3,4,5,6]
+
+ERROR EXPLANATION:
+from the above code numbers have all in number format but only 6 in string format so this is considered as a type error
+
+
+
+
+4)Incorrect Dictionary Usage:
+
+CORRECTED CODE:
+def update_record(records,name,score):
+if name in records:
+records[name].append(score)
+else:
+records[name]=score
+student_records{"Alice":[88,92],"Bob":[70,85]}
+update_record(student_records,"Charlie",91)
+update_record(student_records,"Alice",95)
+print(student_records)
+
+ERROR:
+
